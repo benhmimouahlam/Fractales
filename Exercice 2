@@ -6,17 +6,17 @@ ylist = [0.0]
 for i in range(30000):
     j=random.uniform(0,1)
     if 0 <= j <= 0.02:
-        x = 0.5 
-        y = 0.27 * ylist[i]
+        xx = 0.5 
+        yy = 0.27 * ylist[i]
     if 0.02 <= j <= 0.17:
-        x = -0.139 * xlist[i] + 0.263 * ylist[i] + 0.57
-        y = 0.246 * xlist[i]+ 0.224 * ylist[i] - 0.036 
+        xx = -0.139 * xlist[i] + 0.263 * ylist[i] + 0.57
+        yy = 0.246 * xlist[i]+ 0.224 * ylist[i] - 0.036 
     if 0.17 <= j <= 0.3:
-        x = 0.17 * xlist[i] - 0.215 * ylist[i] + 0.408
-        y = 0.222 * xlist[i] + 0.176 * ylist[i] + 0.0893
+        xx = 0.17 * xlist[i] - 0.215 * ylist[i] + 0.408
+        yy = 0.222 * xlist[i] + 0.176 * ylist[i] + 0.0893
     if 0.3 <= j <= 1.0:
-        x = 0.781 * xlist[i] + 0.034 * ylist[i] + 0.1075
-        y = -0.032 * xlist[i] + 0.739 * ylist[i] + 0.27
+        xx = 0.781 * xlist[i] + 0.034 * ylist[i] + 0.1075
+        yy = -0.032 * xlist[i] + 0.739 * ylist[i] + 0.27
     xlist.append(x)
     ylist.append(y)
     
