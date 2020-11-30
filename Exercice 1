@@ -6,28 +6,28 @@ ylist = [0.0]
 for i in range(30000):
     j=random.uniform(0,1)
     if 0 <= j <= 0.1:
-        x = 0.05 * xlist[i]
-        y = 0.6 * ylist[i]
+        xx = 0.05 * xlist[i]
+        yy = 0.6 * ylist[i]
         
     if 0.1 <= j <= 0.2:
-        x = 0.05 * xlist[i]
-        y = -0.5 * ylist[i] + 1
+        xx = 0.05 * xlist[i]
+        yy = -0.5 * ylist[i] + 1
         
     if 0.2 <= j <= 0.4:
-        x = 0.46 * xlist[i] - 0.32 * ylist[i]
-        y = 0.39 * xlist[i] + 0.38 * ylist[i] + 0.6
+        xx = 0.46 * xlist[i] - 0.32 * ylist[i]
+        yy = 0.39 * xlist[i] + 0.38 * ylist[i] + 0.6
         
     if 0.4 <= j <= 0.6:
-        x = 0.47 * xlist[i] - 0.15 * ylist[i]
-        y = 0.17 * xlist[i] + 0.42 * ylist[i] + 1.1
+        xx = 0.47 * xlist[i] - 0.15 * ylist[i]
+        yy = 0.17 * xlist[i] + 0.42 * ylist[i] + 1.1
         
     if 0.6 <= j <= 0.8:
-        x = 0.43 * xlist[i] + 0.28 * ylist[i]
-        y = - 0.25 * xlist[i] + 0.45 * ylist[i] + 1
+        xx = 0.43 * xlist[i] + 0.28 * ylist[i]
+        yy = - 0.25 * xlist[i] + 0.45 * ylist[i] + 1
         
     if 0.8 <= j <= 1.0:
-        x = 0.42 * xlist[i] + 0.26 * ylist[i]
-        y = -0.35 * xlist[i] + 0.31 * ylist[i] + 0.7
+        xx = 0.42 * xlist[i] + 0.26 * ylist[i]
+        yy = -0.35 * xlist[i] + 0.31 * ylist[i] + 0.7
     xlist.append(x)
     ylist.append(y)
     
