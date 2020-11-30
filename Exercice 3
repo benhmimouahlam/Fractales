@@ -1,0 +1,35 @@
+import random
+import matplotlib.pyplot as plt
+
+x = [3]
+y = [2]
+M1 = [1,1]
+M2 = [4,1]
+M3 = [3,4]
+
+
+for i in range (15000):
+    p = random.uniform(0,1)
+    if 0 <= p <= 1/3:
+        xx = (x[i] + M1[0]) / 2
+        x.append(xx)
+        yy = (y[i] + M1[1]) / 2
+        y.append(yy)
+        
+    if 1/3 <= p <= 2/3:
+        xx = (x[i] + M2[0]) / 2
+        x.append(xx)
+        yy = (y[i] + M2[1]) / 2
+        y.append(yy)
+        
+    if 2/3 <= p <= 1:
+        xx = (x[i] + M3[0]) / 2
+        x.append(xx)
+        yy = (y[i] + M3[1]) / 2
+        y.append(yy)
+        
+ax= plt.gca()
+ax.set_xticks([])
+ax.set_yticks([])
+plt.plot(x,y,'b.')
+plt.show()
